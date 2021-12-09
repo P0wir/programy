@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage{hyperref}
+\title{Kolokwium \LaTeX{} - rząd P107}
+\author{Jan Nowak}
+\date{26.11.2021}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section*{Wprowadzenie}
+
+To jest wprowadzenie objaśniające nieco kolokwium. Zwróć uwagę, że jesteśmy w sekcji nienumerowanej. W sekcji tytułowej wpisz swoje prawdziwe imię i nazwisko. Jako datę wpisz ręcznie datę pisania kolokwium. W tytule znajduje się specjalny symbol. Ustaw czcionkę na 10 pkt, papier jako A4, dołącz pakiet polski. Spis treści jest na początku. Wszystkie odsyłacze powinny być klikalne.
+
+\section{Tabele}
+
+W tej sekcji numerowanej testujemy tabele. Wykonaj poniższą tabelkę. Jest ona w bieżącym miejscu tekstu. Pierwsza kolumna jest do lewej,druga do  środka. Sama tabela jest wyśrodkowana.
+
+To jest odwołanie do tabeli \ref{tab:chev}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|} \hline
+Segment &D \\\hline
+Typy nadwozia &4-drzwiowy sedan\\\hline
+Naped& przedni\\\hline
+Długosc &4770 mm\\\hline
+Szerokosc &1815 mm\\\hline
+Skrzynia biegów &5-biegowa manualna\\\hline
+Wysokosc& 1440 mm\\\hline
+    \end{tabular}
+    \caption{Chevrolet Epica}
+    \label{tab:chev}
+\end{table}
+
+\section{Wzory matematyczne}
+
+Tutaj testujemy wzory matematyczne. Wszystkie są wyśrodkowane w oddzielnym wierszu. Zwróć uwagę, że niektóre posiadają numery.
+
+$$\prod_{i=1}^n i =n!$$
+$$\left\{
+1,\frac{1}{2}, \frac{1}{3}, \ldots, 
+\frac{1}{n+1}
+\right\}
+$$
+
+\begin{equation}
+    \hat{T} = \widehat{T}, 
+\end{equation}
+
+$$\int _a^x \int _a^s f(y) \, dy \, ds$$
+
+\end{document}
